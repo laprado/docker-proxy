@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "1d917322-731a-49aa-a2ba-c71fa0828386",
+		"name": "docker nginx",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29899103"
+	},
+	"item": [
+		{
+			"name": "PROXY POST contra nginx",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"postinho\": \"conteudo\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/teste/de/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"teste",
+						"de",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API POST contra localhost:5100",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"meuPayload\": \"teste\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5100/teste/de/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"teste",
+						"de",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROXY GET contra nginx",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/teste_de_get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"teste_de_get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API GET contra localhost:5100",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5100/teste_de_get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"teste_de_get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
